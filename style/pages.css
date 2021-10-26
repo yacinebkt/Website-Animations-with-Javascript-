@@ -1,0 +1,283 @@
+
+html{
+    overflow-x: hidden;}
+
+
+.profile-cover{
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+}
+
+.profile-cover .cover{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.profile .profile-header{
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    -webkit-transform: translate(-50%, -60%);
+    -moz-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    -o-transform: translate(-50%, -60%);
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    
+}
+
+.profile .profile-header h1{
+    font-size: 42px;
+}
+
+
+.profile .profile-header h3{
+    padding: 15px 5px ;
+    font-size: 35px;
+}
+
+.profile .profile-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 90px 0;
+    flex-direction:row-reverse;
+}
+
+.profile .profile-details .des{
+    width: 50%;
+}
+
+
+.profile .profile-details .des h3{
+    font-size: 36px;
+    padding-bottom: 35px;
+}
+
+
+.profile .profile-details .des p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.profile .profile-details .image-right{
+    width: 30vw;
+}
+
+
+.profile .profile-details .image-right img{
+    width: 100%;
+}
+
+
+
+main .portofolio{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 90px 0;
+}
+
+.portofolio .portofolio-details{
+    width: 45%;
+}
+
+
+.portofolio .portofolio-details h3{
+    font-size: 36px;
+    padding-bottom: 35px;
+}
+
+
+.portofolio .portofolio-details p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+
+
+
+.portofolio .portofolio-images{
+    width: 55%;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(230px, 1fr));
+
+}
+
+
+
+
+.portofolio .portofolio-images img{
+  width: 95%;
+  height: 95%;
+}
+
+
+
+/* Footer Section START 
+===============================*/
+
+.footer {
+    text-align: center;
+  }
+  
+  .footer .icons {
+    padding: 3rem 0;
+  }
+  
+  .footer .icons a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.8rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #107386;
+    font-size: 2.5rem;
+    border: 0.3rem solid #107386;
+    transition: 0.3s ease-in-out;
+    margin: 0 0.22rem;
+    text-decoration: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  .footer .icons a:hover {
+    color: #fff;
+    background: #9E3559;
+    border: 0.3rem solid #9E3559;
+  }
+  
+  .footer .credit {
+    font-size: 2rem;
+    border-top: 0.15rem solid #777;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    color: #444;
+    width: 85%;
+    padding: 0;
+    padding-top: 1rem;
+  }
+  
+  .footer .credit span {
+    color: #9E3559;
+    cursor: pointer;
+  }
+  
+  /* Footer Section END 
+  ===============================*/
+
+@media (max-width: 1024px){
+
+    
+
+        
+    .profile .profile-details{
+        flex-direction: column;
+    }
+
+
+    main .portofolio{
+        flex-direction: column;
+    }
+
+        
+    .profile .profile-details .des{
+        width: 100%;  
+    }
+
+    
+    main .portofolio .portofolio-details{
+        width: 100%;  
+    }
+
+    
+
+
+     .portofolio .portofolio-images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+    }
+    .profile .profile-details image-right{
+        padding: 30px;
+        text-align: center;
+
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .profile .profile-details .image-right {
+        width: 85vw;
+    }
+
+
+
+    
+
+
+/* Footer Section START 
+===============================*/
+
+.footer {
+    text-align: center;
+  }
+  
+  .footer .icons {
+    padding: 2rem 0;
+  }
+  
+  .footer .icons a {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #107386;
+    font-size: 2rem;
+    border: 0.3rem solid #107386;
+    transition: 0.3s ease-in-out;
+    margin: 0 0.22rem;
+    text-decoration: none;
+  }
+  
+  .footer .icons a:hover {
+    color: #fff;
+    background: #9E3559;
+    border: 0.3rem solid #9E3559;
+  }
+  
+  .footer .credit {
+    font-size: 1.8rem;
+    border-top: 0.15rem solid #777;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    color: #444;
+    width: 95%;
+    padding: 0;
+    padding-top: 1rem;
+  }
+  
+  
+  /* Footer Section END 
+  ===============================*/
+
+    
+}
